@@ -5,6 +5,7 @@ EXPECT="exp"
 PROG="./omit"
 # you can change the argument to diff by altering the assignment below
 DIFF="diff -c"
+#DIFF="diff"
 
 # make sure that PROG exists
 if [ ! -f $PROG ]; then
