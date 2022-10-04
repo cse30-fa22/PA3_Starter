@@ -24,7 +24,7 @@ $(OBJ):	$(HEAD)
 $(PROG):	$(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) $(LIB) -o $@
 
-#Specify the test number to test at one
+#Specify the test number to test in order
 LIST    = 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
 testlist:    $(PROG)
 	./runtest $(LIST)
