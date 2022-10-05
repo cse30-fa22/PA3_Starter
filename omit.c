@@ -21,13 +21,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "states.h"
+#define CNT 1   /* start count lines in input at CNT */
 
 int
 main(void)
 {
     int c;              /* input char  */
-    int linecnt = 1;    /* current line count in input */
-    int startline = 1;  /* starting line number: line number in error message */
+    int linecnt = CNT;  /* counts line in input */
+    int startline = CNT;/* starting line number for comment/quote */
 
     enum typestate state = START;  /* initial state of DFA */
 
