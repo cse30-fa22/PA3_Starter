@@ -18,4 +18,9 @@ enum typestate {START};
  */
 
 /* replace this comment with your comments and function prototypes */
+
+/*
+ * definitions for any globals variables you use.
+ * Declare here with an extern .e.g extern int saw_error;
+ */
 #endif
