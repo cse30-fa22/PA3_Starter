@@ -9,8 +9,10 @@
 #include "states.h"
 
 /*
- * if you use any gloable flags e.g. int saw_error = 0;
- * place it here
+ * global flag set by state handlers if they see an error
+ * 0 is no error
+ * 1 is at least 1 error
  */
+int saw_error = 0;
 
-/*  replace this comment with your code */
+/*  replace this comment with your state handling functions below */

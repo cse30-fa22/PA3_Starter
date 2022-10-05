@@ -17,10 +17,11 @@ enum typestate {START};
  *       all other states just need to be passed the input
  */
 
-/* replace this comment with your comments and function prototypes */
-
 /*
- * definitions for any globals variables you use.
- * Declare here with an extern .e.g extern int saw_error;
+ * gloabl variable set if a state handler sees an error
+ * 0 is no error
+ * 1 is at least one error
  */
+extern int saw_error;
+
 #endif
