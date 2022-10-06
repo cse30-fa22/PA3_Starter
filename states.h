@@ -18,7 +18,7 @@ enum typestate {START};
  */
 
 /*
- * gloabl variable set if a state handler sees an error
+ * global variable set if a state handler sees an error
  * 0 is no error
  * 1 is at least one error
  */
