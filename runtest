@@ -55,7 +55,7 @@ do
         echo
 
         # check if the output exist, if not the command did not run
-        if [ -s $OUT/out$index ]; then
+        if [ -f $OUT/out$index ]; then
             echo "differences are:"  
             $DIFF $EXPECT/out$index $OUT/out$index
         else
@@ -77,7 +77,7 @@ do
         echo
 
         # check if the output exist, if not the command did not run
-        if [ -s $OUT/err$index ]; then
+        if [ -f $OUT/err$index ]; then
             $DIFF $EXPECT/err$index $OUT/err$index
         else
             echo "Standard error file is misssing: $OUT/err$index"
