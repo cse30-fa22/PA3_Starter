@@ -59,7 +59,7 @@ do
             echo "differences are:"  
             $DIFF $EXPECT/out$index $OUT/out$index
         else
-            echo "Standard out file is misssing: $OUT/out$index"
+            echo "Standard out file is missing: $OUT/out$index"
         fi
     else
         echo "**** Standard out   on test number $index passed ****"
@@ -80,7 +80,7 @@ do
         if [ -f $OUT/err$index ]; then
             $DIFF $EXPECT/err$index $OUT/err$index
         else
-            echo "Standard error file is misssing: $OUT/err$index"
+            echo "Standard error file is missing: $OUT/err$index"
         fi
     else
         echo "**** Standard error on test number $index passed ****"
