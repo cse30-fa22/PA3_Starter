@@ -80,7 +80,7 @@ do
         if [ -f $OUT/err$index ]; then
             $DIFF $EXPECT/err$index $OUT/err$index
         else
-            echo "Standard error file is misssing: $OUT/err$index"
+            echo "Standard error file is missing: $OUT/err$index"
         fi
     else
         echo "**** Standard error on test number $index passed ****"
